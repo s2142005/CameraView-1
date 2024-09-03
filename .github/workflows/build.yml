@@ -87,12 +87,12 @@ jobs:
         with:
           java-version: 1.8
       - name: Download unit tests artifact
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: unit_tests
           path: ./cameraview/build/coverage_input/unit_tests
       - name: Download emulator tests artifact
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           # 27 is the EMULATOR_API with less SdkExclude annotations, and should have
           # the best possible coverage.
